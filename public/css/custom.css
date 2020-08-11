@@ -1,0 +1,421 @@
+
+/*											REFERIDO AL HEADER										*/
+.navbar{
+	position: fixed;
+	top:0;
+	background-image: linear-gradient(to top right, teal, black);
+	height: 15vh;
+}
+#divLogo{
+	min-width: 30vw;
+	max-width: 30vw;
+	overflow: hidden;
+}
+#navbarText{
+	min-height: 15vh;
+	width: 70vw;
+}
+.imageHeader{
+	margin: auto;
+	max-width: 30vw;
+	max-height: 12vw;
+	animation-name: imageBeating;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.imageHomeHeader{
+	margin-left: 5vw;
+	max-width: 30vw;
+	max-height: 12vw;
+	animation-name: imageRtoL;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+}
+.nav-item{
+	position: relative;
+	min-width: 25%;
+	text-align: center;
+}
+.nav-link{
+	color:white;
+	font-size: 3vh;
+}
+.nav-link:hover{
+	color:lightblue;
+	font-style: italic;
+}
+.dropdown-menu{
+	background-color: red;
+}
+
+@keyframes imageBeating	 {
+  0%   {height: 6vh; width: 13vw}
+  50%  {height: 8vh; width: 19.5vw}
+  100% {height: 10vh; width: 26vw}
+}
+
+@keyframes imageRtoL{
+  0%   {margin-left: 100vw}
+  100% {margin-left: 5vw;}
+}
+
+
+/*											REFERIDO AL BODY										*/
+.content{
+	margin-top:15vh;
+	height: 85vh;
+	background-image: linear-gradient(to top right, black,teal);
+	overflow-y: scroll;
+}
+.card{
+	background-image: linear-gradient(to right, #003737, teal);
+ 	box-shadow: 5px 10px 18px black;
+}
+.btn-link{
+	font-weight: bold;
+	color:#0E8DBD;
+}
+.btn-link:hover{
+	font-weight: bold;
+	font-style: italic;
+	color:cadetblue;
+}
+.btn-link:focus{
+	text-decoration: none;
+}
+.btnMap{
+	margin: auto;
+	background-image: radial-gradient(cyan, teal);
+	color: darkblue;
+}
+.btnCard{
+	width:100%;
+	background-image: radial-gradient(darkcyan,#003737);
+	color: white;
+	border-style: solid white 1px;
+}
+.btnCard:hover{
+	background-image: none;
+	background-image: radial-gradient(white,darkcyan);
+	color:darkblue;
+}
+.btnSuccess{
+	width:100%;
+	background-image: radial-gradient(springgreen,forestgreen);
+	color: white;
+	border-style: solid white 1px;
+}
+.btnSuccess:hover{
+	background-image: none;
+	background-image: radial-gradient(white,forestgreen);
+	color:green;
+}
+.btnDanger{
+	width:100%;
+	background-image: radial-gradient(darkred,indianred);
+	color: white;
+	border-style: solid white 1px;
+}
+.btnDanger:hover{
+	background-image: none;
+	background-image: radial-gradient(white,darkred);
+	color:darkred;
+}
+.card-img-top{
+	max-height: 30vh;
+}
+
+h1,h2,h3,h4{
+	font-family:'Courier New';
+	font-style: italic;
+	text-align: center;
+	font-variant: small-caps;
+	color: white;
+}
+
+p,small{
+	color: white;
+}
+input, .optionSelect{
+	text-align: center;
+}
+hr{
+	border-top: 1px solid cyan;
+	margin-bottom: 0px;
+}
+.row{
+	margin-top: 2vh;
+}
+.carouselShow{
+	margin: 0px;
+}
+.noMarginTop{
+	margin-top:0px;
+}
+.titleShow{
+	background-color: teal;
+	color: cyan;
+	margin-bottom: 0px;
+}
+
+/*													Para el form 										*/
+.form-control{
+	background-color: teal;
+	color:white;
+	text-align: center;
+}
+.form-control:focus{
+	background-color: teal;
+	color: white;
+}
+.form-control::placeholder {
+  color: silver;
+}
+label{
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+}
+textarea{
+	color:black;
+	text-align:left;
+}
+.previewContainer{
+	height: 15vh;
+}
+.previewImage{
+	position: absolute;
+	height: 15vh;
+	width: 100%;
+	z-index: 52;
+}
+.previewImage:hover{
+	z-index: 50;
+}
+.deletePreviewImageButton{
+	position: absolute;
+	height: 15vh;
+	width: 100%;
+	z-index: 51;
+}
+.deletePreviewImageButton:hover{
+	z-index: 53;
+}
+
+/*												SCROLLBAR STYLE												*/
+/* width */
+::-webkit-scrollbar {
+  width: 2vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: black;
+  box-shadow: inset 0 0 0.5vh silver;
+  border-radius: 1vh;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkcyan;
+  border-radius: 1vh;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: silver;
+}
+
+
+/*												BOTON DE WHATSAPP											*/
+
+#ButtonWhatsApp{
+	position: fixed;
+	background-color: transparent;
+	border:0px;
+	background-image: url("/images/walogo.png");
+	background-position: center;
+	background-size: cover;
+	bottom:2vh;
+	left: 2vh;
+	width: 8vh;
+	height: 8vh;
+}
+.titleWA{
+	color: white;
+}
+.headerWA{
+	background-color: #0E6251;
+}
+.bodyWA{
+	background-color: #AAB7B8;
+}
+.dialogWA{
+	position: fixed;
+	bottom: 0px;
+	background-color: grey;
+	width: 25vw;
+	height: initial;
+	opacity: 0.9;
+}
+#textoWA{
+	background-color: #BDC3C7;
+}
+
+.round{
+	border-radius: 15%;
+
+}
+
+/*										UBICACIÓN										*/
+.dialogMap{
+	margin-left: 10vw;
+	position: fixed;
+	background-color: grey;
+	min-width: 80vw;
+	max-width: 80vw;
+	min-height: 70vh;
+	height: initial;
+	opacity: 0.9;
+}
+.titleMap{
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+.headerMap{
+	background-image: linear-gradient(to top right, teal, black);
+}
+.bodyMap{
+	background-image: linear-gradient(to top right, white, teal);
+}
+.map{
+	min-width: 100%;
+	min-height: 70vh;
+}
+
+/*											Banner 											*/
+.banner100{
+	height: 25vh;
+}
+.staticDivMerakiCerrado{
+	width: 25vh;
+	height: 25vh;
+}
+.divMerakiCerrado{
+	width: 25vh;
+	height: 25vh;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	animation-name:merakiCerrado;
+	overflow: hidden;
+	background-image: url("../images/letras/merakiCerrado.png");
+	background-size: 25vh 25vh;
+	background-position: center;
+}
+.staticDivProvincia{
+	width: 25vh;
+	height: 25vh;
+}
+.divProvincia{
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	animation-name:provincia;
+	overflow: hidden;
+	background-image: url("../images/LaPampa.png");
+	background-size: 25vh 25vh;
+	background-position: center;
+}
+
+@keyframes provincia{
+	0%{position:relative; top:0; left:0; width: 25vh;height: 25vh;}
+	50%{position:relative; top:0; left:0; width: 25vh;height: 25vh;}
+	100% {position:relative; top:12vh; left:12vh; width: 1vh;height: 1vh; border-radius: 50px;}
+}
+@keyframes merakiCerrado{
+	0% {position:relative; top:12vh; left:12vh; width: 1vh;height: 1vh; border-radius: 50px;}
+	95%{position:relative; top:0; left:0; width: 25vh;height: 25vh;}
+	100%{position:relative; top:0; left:0; width: 25vh;height: 25vh;}
+	
+}
+
+.divLetras{
+	display: inline-flex;
+}
+.letra{
+	max-width: 10vw;
+	height: 25vh;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+}
+
+.letraleft{
+	animation-name: letraLeft;
+}
+.letram{
+	animation-name: letram;
+}
+.letrae{
+	animation-name: letrae;
+}
+.letrar{
+	animation-name: letrar;
+}
+.letraa{
+	animation-name: letraa;
+}
+.letrak{
+	animation-name: letrak;
+}
+.letrai{
+	animation-name: letrai;
+}
+.letraslash{
+	animation-name: letraslash;
+}
+.letraright{
+	animation-name: letraright;
+}
+
+@keyframes letraLeft{
+  0% {left:0;}
+}
+@keyframes letram{
+  0% {position:relative; left:-10vw;}
+  100% {position: relative; left: 0;}
+}
+@keyframes letrae{
+  0% {position:relative; left:-20vw;}
+  100% {position: relative; left: 0;}
+}
+@keyframes letrar{
+  0% {position:relative; left:-30vw;}
+  100% {position: relative; left: 0;}
+}
+@keyframes letraa{
+  0% {position:relative; left:-40vw;}
+  100% {position: relative; left: 0;}
+}
+@keyframes letrak{
+  0% {position:relative; left:-50vw;}
+  100% {position: relative; left: 0;}
+}
+@keyframes letrai{
+  0% {position:relative; left:-55vw;}
+  100% {position: relative; left: 0;}
+}
+@keyframes letraslash{
+  0% {position:relative; left:-65vw;}
+  100% {position: relative; left: 0;}
+}
+@keyframes letraright{
+  0% {position:relative; left:-74vw;}
+  100% {position: relative; left: 0;}
+}
